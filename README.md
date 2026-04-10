@@ -19,10 +19,22 @@ A CLI tool for logging time against Jira tickets. Built with Bun and TypeScript.
 bun install -g jira-logger
 ```
 
+OR
+
+```bash
+bunx jira-logger
+```
+
 ### Using npm
 
 ```bash
 npm install -g jira-logger
+```
+
+OR
+
+```bash
+npx jira-logger
 ```
 
 ### From source
