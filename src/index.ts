@@ -28,10 +28,10 @@ const config = getConfig();
 
 if (args.values.help) {
 	console.log(`
-jira-time-logger - CLI tool for logging time against Jira tickets
+jira-logger - CLI tool for logging time against Jira tickets
 
 USAGE:
-  jira-time-logger [options] [command]
+  jira-logger [options] [command]
 
 COMMANDS:
   log              Log time against a Jira ticket (default)
@@ -46,16 +46,16 @@ OPTIONS:
   -v, --version            Show version
 
 EXAMPLES:
-  jira-time-logger                              # Interactive mode
-  jira-time-logger log -t PROJ-123 -T 1h30m     # Log 1h30m to PROJ-123
-  jira-time-logger setup                        # Configure credentials
-  jira-time-logger install-skill                # Install AI tool skill
+  jira-logger                              # Interactive mode
+  jira-logger log -t PROJ-123 -T 1h30m     # Log 1h30m to PROJ-123
+  jira-logger setup                        # Configure credentials
+  jira-logger install-skill                # Install AI tool skill
 `);
 	process.exit(0);
 }
 
 if (args.values.version) {
-	console.log("jira-time-logger v1.0.0");
+	console.log("jira-logger v1.0.0");
 	process.exit(0);
 }
 

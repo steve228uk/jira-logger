@@ -3,7 +3,7 @@ import { homedir } from "node:os";
 import { join } from "node:path";
 import { existsSync, readFileSync, writeFileSync, mkdirSync } from "node:fs";
 
-const CONFIG_DIR = join(homedir(), ".config", "jira-time-logger");
+const CONFIG_DIR = join(homedir(), ".config", "jira-logger");
 const CONFIG_FILE = join(CONFIG_DIR, "config.json");
 
 export function getConfigFromEnv(): Config | null {

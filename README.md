@@ -16,20 +16,20 @@ A CLI tool for logging time against Jira tickets. Built with Bun and TypeScript.
 ### Using Bun (recommended)
 
 ```bash
-bun install -g jira-time-logger
+bun install -g jira-logger
 ```
 
 ### Using npm
 
 ```bash
-npm install -g jira-time-logger
+npm install -g jira-logger
 ```
 
 ### From source
 
 ```bash
 git clone <repo-url>
-cd jira-time-logger
+cd jira-logger
 bun install
 bun run build
 # Then use ./dist/index.js or add to PATH
@@ -40,7 +40,7 @@ bun run build
 Before using the CLI, configure your Jira credentials:
 
 ```bash
-jira-time-logger setup
+jira-logger setup
 ```
 
 You'll be prompted for:
@@ -65,7 +65,7 @@ export JIRA_PROJECT="PROJ"  # optional
 ### Interactive Mode
 
 ```bash
-jira-time-logger
+jira-logger
 ```
 
 The CLI will:
@@ -77,7 +77,7 @@ The CLI will:
 ### Non-Interactive Mode
 
 ```bash
-jira-time-logger log -t PROJ-123 -T 1h30m -c "Implemented feature"
+jira-logger log -t PROJ-123 -T 1h30m -c "Implemented feature"
 ```
 
 Arguments:
@@ -109,7 +109,7 @@ The CLI parses your current branch to extract the ticket:
 Enable AI assistants to use the Jira Time Logger with natural language:
 
 ```bash
-jira-time-logger install-skill
+jira-logger install-skill
 ```
 
 You'll be prompted to select:
@@ -128,27 +128,27 @@ After installing, you can say:
 
 | Command | Description |
 |---------|-------------|
-| `jira-time-logger` | Log time (interactive, default) |
-| `jira-time-logger log` | Log time (same as default) |
-| `jira-time-logger log -t TICKET -T TIME` | Log time (non-interactive) |
-| `jira-time-logger setup` | Configure credentials |
-| `jira-time-logger install-skill` | Install AI tool skill |
-| `jira-time-logger --help` | Show help |
+| `jira-logger` | Log time (interactive, default) |
+| `jira-logger log` | Log time (same as default) |
+| `jira-logger log -t TICKET -T TIME` | Log time (non-interactive) |
+| `jira-logger setup` | Configure credentials |
+| `jira-logger install-skill` | Install AI tool skill |
+| `jira-logger --help` | Show help |
 
 ## Configuration
 
-Credentials are stored in `~/.config/jira-time-logger/config.json`.
+Credentials are stored in `~/.config/jira-logger/config.json`.
 
 To update credentials:
 ```bash
-jira-time-logger setup
+jira-logger setup
 ```
 
 ## Troubleshooting
 
 ### "Failed to connect to Jira"
 
-1. Verify your credentials with `jira-time-logger setup`
+1. Verify your credentials with `jira-logger setup`
 2. Check your API token is valid at https://id.atlassian.com/manage-profile/security/api-tokens
 3. Ensure your email matches your Jira account
 

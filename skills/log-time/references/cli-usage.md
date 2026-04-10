@@ -4,16 +4,16 @@
 
 ```bash
 # Log time (interactive - default)
-jira-time-logger
+jira-logger
 
 # Log time (non-interactive)
-jira-time-logger log -t PROJ-123 -T 1h30m
+jira-logger log -t PROJ-123 -T 1h30m
 
 # Setup wizard
-jira-time-logger setup
+jira-logger setup
 
 # Install skill for AI tools
-jira-time-logger install-skill
+jira-logger install-skill
 ```
 
 ## Time Formats
@@ -33,7 +33,7 @@ The CLI automatically detects the Jira ticket from your current git branch:
 
 ## Configuration
 
-Credentials are stored in `~/.config/jira-time-logger/config.json`
+Credentials are stored in `~/.config/jira-logger/config.json`
 or via environment variables:
 - `JIRA_HOST`
 - `JIRA_EMAIL`

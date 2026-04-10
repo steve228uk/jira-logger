@@ -125,7 +125,7 @@ export async function logTimeNonInteractive(options: {
 }) {
 	const config = getConfig();
 	if (!config) {
-		logError("No configuration found. Run 'jira-time-logger setup' first.");
+		logError("No configuration found. Run 'jira-logger setup' first.");
 		process.exit(1);
 	}
 

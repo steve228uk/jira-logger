@@ -1,10 +1,10 @@
 {
-  "name": "jira-time-logger",
+  "name": "jira-logger",
   "version": "0.1.0",
   "description": "CLI tool for logging time against Jira tickets",
   "type": "module",
   "bin": {
-    "jira-time-logger": "./dist/index.js"
+    "jira-logger": "./dist/index.js"
   },
   "scripts": {
     "build": "bun build --compile --outfile=dist/index.js --target=bun src/index.ts",
@@ -23,7 +23,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/steve228uk/jira-time-logger"
+    "url": "https://github.com/steve228uk/jira-logger"
   },
   "keywords": [
     "jira",
@@ -35,7 +35,7 @@
   "author": "Stephen Radford",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/steve228uk/jira-time-logger/issues"
+    "url": "https://github.com/steve228uk/jira-logger/issues"
   },
   "dependencies": {
     "inquirer": "^13.4.1",

@@ -166,20 +166,20 @@ description: Log time against a Jira ticket. Use when developer mentions logging
 
 # Log Time Skill
 
-This skill helps developers log time against Jira tickets using the \`jira-time-logger\` CLI tool.
+This skill helps developers log time against Jira tickets using the \`jira-logger\` CLI tool.
 
 ## How to Use
 
 When the user wants to log time against a Jira ticket, run:
 
 \`\`\`bash
-jira-time-logger
+jira-logger
 \`\`\`
 
 Or for non-interactive mode with all details provided:
 
 \`\`\`bash
-jira-time-logger log -t TICKET -T TIME -c "comment"
+jira-logger log -t TICKET -T TIME -c "comment"
 \`\`\`
 
 ## Time Estimation
@@ -234,9 +234,9 @@ Always confirm the estimate with the user before logging:
 
 ## Examples
 
-- Interactive mode: \`jira-time-logger\`
-- Log time: \`jira-time-logger log -t PROJ-123 -T 1h30m\`
-- With comment: \`jira-time-logger log -t PROJ-123 -T 2h -c "Completed feature implementation"\`
+- Interactive mode: \`jira-logger\`
+- Log time: \`jira-logger log -t PROJ-123 -T 1h30m\`
+- With comment: \`jira-logger log -t PROJ-123 -T 2h -c "Completed feature implementation"\`
 - Estimate time: Analyze git history and suggest estimate to user
 
 ## First Time Setup
@@ -244,7 +244,7 @@ Always confirm the estimate with the user before logging:
 If credentials aren't configured, run:
 
 \`\`\`bash
-jira-time-logger setup
+jira-logger setup
 \`\`\`
 
 This will prompt for:
@@ -260,16 +260,16 @@ This will prompt for:
 
 \`\`\`bash
 # Log time (interactive - default)
-jira-time-logger
+jira-logger
 
 # Log time (non-interactive)
-jira-time-logger log -t PROJ-123 -T 1h30m
+jira-logger log -t PROJ-123 -T 1h30m
 
 # Setup wizard
-jira-time-logger setup
+jira-logger setup
 
 # Install skill for AI tools
-jira-time-logger install-skill
+jira-logger install-skill
 \`\`\`
 
 ## Time Formats
@@ -289,7 +289,7 @@ The CLI automatically detects the Jira ticket from your current git branch:
 
 ## Configuration
 
-Credentials are stored in \`~/.config/jira-time-logger/config.json\`
+Credentials are stored in \`~/.config/jira-logger/config.json\`
 or via environment variables:
 - \`JIRA_HOST\`
 - \`JIRA_EMAIL\`
